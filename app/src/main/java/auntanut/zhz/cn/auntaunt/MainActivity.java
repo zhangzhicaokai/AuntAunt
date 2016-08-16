@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_me:
                 setSelected();
                 tv_me.setSelected(true);
-                //fg3 = new Main_Fragment("第三个Fragment");
+                fg3 = new Main_Fragment("第三个Fragment");
                 getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fl_content, Aboutme_Fragment.newInstance(null)).commit();
+                        .replace(R.id.fl_content,fg3).commit();
                 break;
         }
 
